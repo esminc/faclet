@@ -6,7 +6,9 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'faclet'
+    group :test
+      gem 'faclet'
+    end
 
 And then execute:
 
@@ -18,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the following code to `spec_helper.rb`:
+
+    require 'faclet'
+
+    RSpec.configure do |config|
+      ...
+      config.extend Faclet::Syntax
+      ...
+    end
 
 ## Contributing
 
