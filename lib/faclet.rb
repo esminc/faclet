@@ -1,4 +1,2 @@
-require "faclet/version"
-
-module Faclet
-end
+require 'faclet/version'
+require 'faclet/syntax'
