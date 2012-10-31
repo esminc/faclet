@@ -11,5 +11,11 @@ module Faclet
 
       let!(name) { FactoryGirl.create(args.first || name, attrs, &block) }
     end
+
+    def fubject(name, *args, &block)
+      attrs = args.extract_options!
+
+      subject(name) { FactoryGirl.create(args.first || name, attrs, &block) }
+    end
   end
 end
