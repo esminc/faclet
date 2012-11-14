@@ -30,6 +30,14 @@ Add the following code to `spec_helper.rb`:
       ...
     end
 
+## Methods
+
+```
+faclet(:user)  #=> let(:user) { FactoryGirl.create(:user) }
+faclet!(:user) #=> let!(:user) { FactoryGirl.create(:user) }
+fubject(:user) #=> subject(:user) { FactoryGirl.create(:user) }
+```
+
 ## Contributing
 
 1. Fork it
