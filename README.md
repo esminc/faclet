@@ -1,6 +1,6 @@
-# Faclet
+# faclet
 
-TODO: Write a gem description
+factory_girl + let(RSpec) = faclet
 
 ## Installation
 
